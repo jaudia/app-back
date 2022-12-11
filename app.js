@@ -7,6 +7,7 @@ require('dotenv').config()
 app.use(cors());
 
 console.log(process.env.PRUEBA_VARIABLE);
+console.log(process.env.PORT_BACKEND);
 
 app.get('/', (req, res) => {
   res.json({ msg: 'mensaje desde el backend!!' });
