@@ -1,13 +1,14 @@
 const express = require('express')
 const cors = require('cors')
 const app = express()
-const port = Number(process.env.PORT_BACKEND);
 require('dotenv').config()
 
 app.use(cors());
 
+const port = process.env.PORT_BACKEND;
+
 console.log(process.env.PRUEBA_VARIABLE);
-console.log(process.env.PORT_BACKEND);
+console.log(port);
 
 app.get('/', (req, res) => {
   res.json({ msg: 'mensaje desde el backend!!' });
