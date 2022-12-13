@@ -11,7 +11,8 @@ console.log(process.env.PRUEBA_VARIABLE);
 console.log(port);
 
 app.get('/', (req, res) => {
-  res.json({ msg: 'mensaje desde el backend!!' });
+  // res.json({ msg: 'mensaje desde el backend!!' });
+  res.send('PRUEBA DESDE EL BACK!!');
 })
 
 app.listen(port, () => {
